@@ -1,0 +1,63 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# Steps to take
+
+1. Turn edgelist into graph
+1. Determine number of axes based on number of clusters (or other option)
+1. Determine size based on a measure, page rank to start
+1. Determine position based on closeness or other measure
+
+# Example code
+
+```{r load-packs}
+library(igraph)
+library(dplyr)
+library(magrittr)
+library(HivePlot)
+```
+
+```{r load-data}
+# load data
+data(flights)
+```
+
+```{r make-graph}
+# turn into a graph
+g <- graph.data.frame(flights, directed=FALSE)
+```
+
+```{r axes}
+# Perform clustering to determine number of axes
+g %<>% findAxes
+V(g)$axis
+```
+
+```{r node-size}
+g %<>% nodeSize
+V(g)$nodeSize
+```
+
+```{r node-pos}
+g %<>% nodePosition
+V(g)$nodePosition
+```
+
+# More Reading
+- http://www.r-bloggers.com/hive-plots-using-r-and-cytoscape/
+- http://bib.oxfordjournals.org/content/13/5/627.full
+- http://cran.r-project.org/web/packages/HiveR/vignettes/HiveR.pdf
+- http://www.vesnam.com/Rblog/viznets3/
