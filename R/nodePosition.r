@@ -11,6 +11,7 @@
 #' @return A graph with a new Vertex slot 'axis' that stores the cluster membership
 #' @examples 
 #' data(flights)
+#' library(igraph)
 #' g <- graph.data.frame(flights, directed=TRUE)
 #' g2 <- nodePosition(g)
 #' V(g2)$nodePosition

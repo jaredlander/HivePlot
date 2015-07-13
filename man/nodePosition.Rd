@@ -24,6 +24,7 @@ Computes the position of vertices along axes based on some centrality algorithm 
 }
 \examples{
 data(flights)
+library(igraph)
 g <- graph.data.frame(flights, directed=TRUE)
 g2 <- nodePosition(g)
 V(g2)$nodePosition

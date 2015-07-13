@@ -24,6 +24,7 @@ Computes size of vertices based on some importance algorithm such as \code{\link
 }
 \examples{
 data(flights)
+library(igraph)
 g <- graph.data.frame(flights, directed=TRUE)
 g2 <- nodeSize(g)
 V(g2)$nodeSize
