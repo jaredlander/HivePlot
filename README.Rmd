@@ -14,12 +14,15 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis-CI Build Status](https://travis-ci.org/jaredlander/HivePlot.svg?branch=master)](https://travis-ci.org/jaredlander/HivePlot)
+
 # Steps to take
 
 1. Turn edgelist into graph
 1. Determine number of axes based on number of clusters (or other option)
 1. Determine size based on a measure, page rank to start
 1. Determine position based on closeness or other measure
+1. Plot these coordinates
 
 # Example code
 

@@ -1,4 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis-CI Build Status](https://travis-ci.org/jaredlander/HivePlot.svg?branch=master)](https://travis-ci.org/jaredlander/HivePlot)
+
 Steps to take
 =============
 
@@ -6,6 +8,7 @@ Steps to take
 2.  Determine number of axes based on number of clusters (or other option)
 3.  Determine size based on a measure, page rank to start
 4.  Determine position based on closeness or other measure
+5.  Plot these coordinates
 
 Example code
 ============
