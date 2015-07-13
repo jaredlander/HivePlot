@@ -23,6 +23,7 @@ Places vertices into axes
 Places vertices into axes based on a clustering algorithm
 }
 \examples{
+library(igraph)
 data(flights)
 g <- graph.data.frame(flights, directed=TRUE)
 g2 <- findAxes(g)

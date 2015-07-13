@@ -10,6 +10,7 @@
 #' @param \dots Further arguments for \code{func}
 #' @return A graph with a new Vertex slot 'axis' that stores the cluster membership
 #' @examples 
+#' library(igraph)
 #' data(flights)
 #' g <- graph.data.frame(flights, directed=TRUE)
 #' g2 <- findAxes(g)
