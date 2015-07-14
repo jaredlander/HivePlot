@@ -4,7 +4,7 @@
 #' @aliases findAxes
 #' @export findAxes
 #' @author Jared P. Lander
-#' @importFrom igraph walktrap.community V
+#' @importFrom igraph walktrap.community "V<-" V
 #' @param graph An igraph object
 #' @param func A function that returns a cluster membership for each node
 #' @param \dots Further arguments for \code{func}

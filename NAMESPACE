@@ -3,6 +3,7 @@
 export(findAxes)
 export(nodePosition)
 export(nodeSize)
+importFrom(igraph,"V<-")
 importFrom(igraph,V)
 importFrom(igraph,closeness)
 importFrom(igraph,page.rank)

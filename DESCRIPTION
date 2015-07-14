@@ -3,8 +3,8 @@ Title: Calculations for Hive Plots
 Version: 0.1.0
 Authors@R: person("Jared", "Lander", email = "packages@jaredlander.com", role = c("aut", "cre"))
 Description: Performs calculations for hive plots.
-Depends: R
-License: What license is it under?
+Depends: R (>= 3.1.0)
+License: BSD_3_clause + file LICENSE
 LazyData: true
 LazyLoad: true
 ByteCompile: true

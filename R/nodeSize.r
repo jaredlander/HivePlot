@@ -4,7 +4,7 @@
 #' @aliases nodeSize
 #' @export nodeSize
 #' @author Jared P. Lander
-#' @importFrom igraph page.rank V
+#' @importFrom igraph page.rank "V<-" V
 #' @param graph An igraph object
 #' @param func A function that returns a cluster membership for each node
 #' @param \dots Further arguments for \code{func}
