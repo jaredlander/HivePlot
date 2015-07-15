@@ -1,7 +1,11 @@
 Package: HivePlot
 Title: Calculations for Hive Plots
 Version: 0.1.0
-Authors@R: person("Jared", "Lander", email = "packages@jaredlander.com", role = c("aut", "cre"))
+Authors@R: c(
+    person(given="Jared", family="Lander", middle="P.", email="packages@jaredlander.com", role=c("aut", "cre", "cph", "dtc"))
+    )
+URL: https://github.com/jaredlander/HivePlot
+BugReports: https://github.com/jaredlander/HivePlot/issues
 Description: Performs calculations for hive plots.
 Depends: R (>= 3.1.0)
 License: BSD_3_clause + file LICENSE
