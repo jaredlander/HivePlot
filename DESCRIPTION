@@ -13,4 +13,5 @@ LazyData: true
 LazyLoad: true
 ByteCompile: true
 Suggests: testthat
-Imports: igraph
+Imports: igraph,
+    useful
