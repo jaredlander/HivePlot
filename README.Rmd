@@ -59,6 +59,9 @@ g %<>% nodePosition
 V(g)$nodePosition
 ```
 
+# Axis Positions
+The first axis will always be the positive side of the x-axis on the cartesian plane (eventually we will be able to specify a starting offset for this first axis)
+
 # More Reading
 - http://www.r-bloggers.com/hive-plots-using-r-and-cytoscape/
 - http://bib.oxfordjournals.org/content/13/5/627.full
