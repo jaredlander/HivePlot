@@ -67,3 +67,4 @@ The first axis will always be the positive side of the x-axis on the cartesian p
 - http://bib.oxfordjournals.org/content/13/5/627.full
 - http://cran.r-project.org/web/packages/HiveR/vignettes/HiveR.pdf
 - http://www.vesnam.com/Rblog/viznets3/
+- http://www.r-bloggers.com/the-network-structure-of-cran/
