@@ -73,5 +73,5 @@ layout_with_hive <- function(graph)
     
     ## convert polar coordinates to cartesian
     ## theta is the angle and V(graph)$nodePosition is r, the magnitude
-    pol2cart(r=V(graph)$nodePosition, theta=theta) %>% select(x, y) %>% as.matrix
+    pol2cart(r=V(graph)$nodePosition, theta=theta) %>% select(x, y) %>% setNames(NULL) %>% as.matrix 
 }
