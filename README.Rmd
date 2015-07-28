@@ -6,11 +6,11 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, echo = FALSE}
+```{r settings, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "README-Images/"
 )
 ```
 
@@ -36,6 +36,7 @@ library(HivePlot)
 ```{r load-data}
 # load data
 data(flights)
+head(flights)
 ```
 
 ```{r make-graph}
@@ -45,19 +46,30 @@ g <- graph.data.frame(flights, directed=FALSE)
 
 ```{r axes}
 # Perform clustering to determine number of axes
+# it defaults to walktrap.community but any function that returns a clustering should work
 g %<>% findAxes
 V(g)$axis
 ```
 
 ```{r node-size}
+# calculate the size of the nodes, defaulting to page.rank
 g %<>% nodeSize
 V(g)$nodeSize
 ```
 
 ```{r node-pos}
+# find how high up the axis each node should be, defaulting to closeness
 g %<>% nodePosition
 V(g)$nodePosition
 ```
+
+# Plotting
+Until the package for `[Sigma.js](https://github.com/jaredlander/sigma)` is ready we will use `igraph` for plotting
+
+```{r plot-hive}
+plot(g, layout=layout_with_hive(g))
+```
+
 
 # Axis Positions
 The first axis will always be the positive side of the x-axis on the cartesian plane (eventually we will be able to specify a starting offset for this first axis)
