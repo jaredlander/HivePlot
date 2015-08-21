@@ -1,9 +1,8 @@
 Package: HivePlot
 Title: Calculations for Hive Plots
 Version: 0.1.0
-Authors@R: c(
-    person(given="Jared", family="Lander", email="packages@jaredlander.com", role=c("aut", "cre", "cph"))
-    )
+Author: Jared P. Lander
+Maintainer: Jared P. Lander <packages@jaredlander.com>
 URL: https://github.com/jaredlander/HivePlot
 BugReports: https://github.com/jaredlander/HivePlot/issues
 Description: Performs calculations for hive plots.
@@ -14,4 +13,6 @@ LazyLoad: true
 ByteCompile: true
 Suggests: testthat
 Imports: igraph,
-    useful
+    useful,
+    dplyr,
+    magrittr

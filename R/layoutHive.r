@@ -4,6 +4,7 @@
 #' @importFrom magrittr "%>%"
 #' @importFrom igraph V
 #' @aliases getAxisAngles
+#' @export getAxisAngles
 #' @author Jared P. Lander
 #' @param graph An igraph object
 #' @param firstAxis By defualt the first axis is positioned along the x-axis.  This arugment allows that to be adjusted, which would offset all the axes by that amount.
@@ -41,7 +42,7 @@ getAxisAngles <- function(graph, firstAxis=0, degrees=FALSE)
 #' @aliases layout_with_hive
 #' @importFrom magrittr "%<>%"
 #' @importFrom igraph V
-#' @importFrom dplyr select
+#' @importFrom dplyr select_
 #' @importFrom useful pol2cart
 #' @author Jared P. Lander
 #' @param graph An igraph object
@@ -73,5 +74,5 @@ layout_with_hive <- function(graph)
     
     ## convert polar coordinates to cartesian
     ## theta is the angle and V(graph)$nodePosition is r, the magnitude
-    pol2cart(r=V(graph)$nodePosition, theta=theta) %>% select(x, y) %>% setNames(NULL) %>% as.matrix 
+    pol2cart(r=V(graph)$nodePosition, theta=theta) %>% select_('x', 'y') %>% setNames(NULL) %>% as.matrix 
 }
