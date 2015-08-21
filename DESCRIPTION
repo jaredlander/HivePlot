@@ -2,7 +2,7 @@ Package: HivePlot
 Title: Calculations for Hive Plots
 Version: 0.1.0
 Authors@R: c(
-    person(given="Jared", family="Lander", email="packages@jaredlander.com", role=c("aut", "cre", "cph", "dtc"))
+    person(given="Jared", family="Lander", email="packages@jaredlander.com", role=c("aut", "cre", "cph"))
     )
 URL: https://github.com/jaredlander/HivePlot
 BugReports: https://github.com/jaredlander/HivePlot/issues
